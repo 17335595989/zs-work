@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+    }
+.dadiv{
+	width: 1200px;
+	height: 361px;
+    }
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 1200px;
+	height: 361px;
+    }
+.blog{ 
+	width: 370px;
+    height: 361px;
+    }
+			
+.blog-1{
+    width: 370px;
+	height: 361px;
+	margin-left: 20px;
+	}
+.blog-title{
+	width: 300px;
+	height: 64px;
+	color: black;
+	line-height: 1.8;
+	}
+	

@@ -1,0 +1,87 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>调色板</title>
+		<script src="../jquery.min.js"></script>
+		<style>
+			#di{
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				border-width: 3px;
+				float: left;
+				background-color: darkgoldenrod;
+				cursor: pointer;
+			}
+			#di1,#di2,#di3,#d4,#di5,#di6{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				float: left;
+				margin-left: 20px;
+				margin-top: 50px;
+				background-color: darkgoldenrod;
+				display: none;
+			}
+			/*#di1{
+				background-color: ;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div id="di"></div>
+		<div id="di1" style="background-color: rgb(225, 105, 195);"></div>
+		<div id="di2" style="background-color: rgb(163, 209, 309);"></div>
+		<div id="di3" style="background-color: rgb(229, 159, 205);"></div>
+		<div id="di4" style="background-color: rgb(207, 333, 105);"></div>
+		<div id="di5" style="background-color: rgb(109, 307, 173);"></div>
+		<div id="di6" style="background-color: rgb(257, 106, 207);"></div>
+		<script>
+//			var a = true;
+//			$("#di").click(function(){
+//          	if (a) {
+//                 $("#di1,#di2,#di3,#d4,#di5").hide();
+//		           a = false;
+//	            } else {
+//		           $("#di1,#di2,#di3,#d4,#di5").show();
+//		           a = true;
+//	            }
+//          })
+//			
+			
+			 var ist=true
+			 $("#di").click(function(){
+			 	if (ist) {
+			 		ist=false
+			 		$("#di1,#di2,#di3,#di4,#di5,#di6").css("display","block")
+			 	} else{
+			 		ist=true
+			 		$("#di1,#di2,#di3,#di4,#di5,#di6").css("display","none")
+			 		$("body").css("backgroundColor","white")
+			 	}
+			 })
+			 
+			 $("#di1").click(function() {
+				$("body").css("background-color", "rgb(225, 105, 195)")
+			})
+			$("#di2").click(function() {
+				$("body").css("background-color", "rgb(163, 209, 309)")
+			})
+			$("#di3").click(function() {
+				$("body").css("background-color", "rgb(229, 159, 205)")
+			})
+			$("#di4").click(function() {
+				$("body").css("background-color", "rgb(207, 333, 105)")
+			})
+			$("#di5").click(function() {
+				$("body").css("background-color", "rgb(109, 307, 173)")
+			})
+			$("#di6").click(function() {
+				$("body").css("background-color", "rgb(257, 106, 207)")
+			})
+
+
+		</script>
+	</body>
+<html>
